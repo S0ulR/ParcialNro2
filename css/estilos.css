@@ -8,6 +8,7 @@ body {
 }
 
 header {
+    position: relative;
     justify-content: center;
     align-items: center;
     height: auto;
@@ -18,7 +19,7 @@ header {
 
 .sesion{
     font-size: 2rem;
-    color: #710056;
+    color: #ffffff;
     font-style: italic;
     float: right;
     margin-right: 2rem;
@@ -45,8 +46,14 @@ nav li a{
     text-align: center;
 }
 
-section {
-    align-items: center;
+section{
+    padding-top: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    order: 2;
+}
+
+.contenido{
+    text-align: center;
     padding-top: 1%;
     font-family: 'Times New Roman', Times, serif;
     order: 2;
@@ -58,7 +65,8 @@ footer{
     justify-content: center;
     text-align: center;
     background-color: #FF00C1;
-    order: 3;margin-top: 2%;
+    order: 3;
+    margin-top: 2%;
 }
 
 input, select{
@@ -88,11 +96,27 @@ button{
     border: #ffffff solid 1px;
 }
 
+.pass{
+    margin-bottom: 1%;
+}
+
 #warnings {
     color: red;
     text-shadow: none;
 }
 
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.formularioLogin{
+    height: auto;
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
 
 @media only screen and (min-width: 980px) {
       
@@ -128,7 +152,7 @@ ul li a:hover{
     background-color: #DF02F9;
 }
 
-section{
+section, .contenido{
     align-items: flex-start;
     margin-left: 50px;
 }
@@ -136,5 +160,9 @@ section{
 button:hover{    
     background-color: #DF02F9;
     color: #000000;
+}
+
+.sesion:hover{
+    text-decoration: underline;
 }
 }
