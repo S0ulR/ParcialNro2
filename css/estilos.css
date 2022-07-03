@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    background-color: #F772D6;
+    color: #ffffff;
+    text-shadow: 2px 2px #73706e;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 0;
+    background-color: #FF00C1;
+    order: 1;
+}
+
+.sesion{
+    font-size: 2rem;
+    color: #710056;
+    font-style: italic;
+    float: right;
+    margin-right: 2rem;
+    text-shadow: none;
+}
+
+nav ul{
+    list-style: none;
+    padding: 5px 0;
+    margin: auto;
+}
+
+nav li a{
+    display: block;
+    padding: 0 20px;
+    background-color: #710056;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2rem;
+    height: 3rem;
+    border: 1px solid #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+section {
+    align-items: center;
+    padding-top: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    order: 2;
+}
+
+footer{
+    height: auto;
+    padding: 3%;
+    justify-content: center;
+    text-align: center;
+    background-color: #FF00C1;
+    order: 3;margin-top: 2%;
+}
+
+input, select{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+}
+
+textarea{
+    display: flex;
+    flex-direction: column;
+    height:5rem ;
+    width: 20rem;
+    margin-bottom: 2%;
+}
+
+button{
+    background-color: #710056;
+    color: #ffffff;
+    border: #ffffff solid 1px;
+}
+
+#warnings {
+    color: red;
+    text-shadow: none;
+}
+
+
+@media only screen and (min-width: 980px) {
+      
+body{
+    width: 100%;
+    text-align: left;
+}
+   
+nav{
+    height: 150px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+      
+ul li a{
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: 2px #ffffff solid;
+    line-height: 30px;
+}
+      
+ul li{
+    display: inline;
+}
+      
+ul li a:hover{
+    background-color: #DF02F9;
+}
+
+section{
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+button:hover{    
+    background-color: #DF02F9;
+    color: #000000;
+}
+}
