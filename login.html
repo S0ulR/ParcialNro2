@@ -24,12 +24,18 @@
     </header>
     <section class="formularioLogin">
         <h1>Iniciar sesión</h1>
-        <form action="">
-            <label for="">E-mail</label>
-            <input type="text" placeholder="Ingrese su mail">
-            <label for="">Contraseña</label>
-            <input type="password" placeholder="Ingrese su contraseña" class="pass">
-            <button type="submit" value="">Iniciar sesión</button>
+        <form id="login" action="" method="post">
+            <div class="form-control">
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Escriba su e-mail">
+                <p></p>
+            </div>
+            <div class="form-control">
+                <label for="pass">Contraseña: </label>
+                <input type="password" name="pass" id="pass" placeholder="Escriba su contraseña">
+                <p></p>
+            </div>
+            <button type="submit" id="submit">Iniciar sesión</button>
         </form>
     </section>
     <footer>
