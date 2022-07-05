@@ -69,7 +69,7 @@ footer{
     margin-top: 2%;
 }
 
-input, select{
+select{
     display: flex;
     flex-direction: column;
     margin-left: 3%;
@@ -100,9 +100,28 @@ button{
     margin-bottom: 1%;
 }
 
-#warnings {
-    color: red;
+.form-control.ok input{
+    border: 1px solid;
+    border-color: #08ffc8;
+}
+
+.form-control.falla input{
+    border: 1px solid;
+    border-color: #FB0303;
+}
+
+.form-control.falla p{
+    visibility: visible;
+    border-color: #FB0303;
+}
+
+p{
     text-shadow: none;
+    color: #FB0303;
+}
+
+.texto{
+    color: #ffffff;
 }
 
 a{
@@ -114,8 +133,7 @@ a{
     height: auto;
     padding: 3%;
     justify-content: center;
-    align-items: center;
-    margin-top: 2%;
+    margin-top: 1% 2%;
 }
 
 @media only screen and (min-width: 980px) {

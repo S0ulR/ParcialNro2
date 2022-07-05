@@ -24,20 +24,25 @@
         </nav>
     </header>
     <section>
-        <h2>Formulario de registro</h2>
-        <form name="formulario" action="" id="formulario" onsubmit="validarFormulario()">
+        <h1>Formulario de registro</h1>
+        <form name="formulario" action="" id="formulario" onsubmit="return validacion()">
             <label for="nombre">(*) Nombre: </label>
             <input type="text" name="nombre" id="nombreInput" placeholder="Introduzca su nombre">
             <label for="apellido">(*) Apellido: </label>
             <input type="text" name="apellido" id="apellidoInput" placeholder="Introduzca su apellido">
             <label for="email">(*) E-mail: </label>
             <input type="email" name="email" id="emailInput" placeholder="Escriba su e-mail">
-            <label for="edad">(*) Edad: </label>
+            <label for="contrasena">(*) Contraseña: </label>
+            <input type="password" name="contrasena" id="contrasenaInput" placeholder="Escriba su contraseña">            
+            <label for="recontrasena">(*) Repita su contraseña: </label>
+            <input type="password" name="recontrasena" id="recontrasenaInput" placeholder="Repita su contraseña">
+            <label for="edad">Edad: </label>
             <input type="text" name="edad" id="edadInput" placeholder="Indique su edad">
-            <label for="genero">(*) Sexo: </label>
+            <label for="genero">Sexo: </label>
             <input type="radio" name="genero" id="genero1">Mujer
             <input type="radio" name="genero" id="genero2">Hombre
-            <input type="radio" name="genero" id="genero3">Otro           
+            <input type="radio" name="genero" id="genero3">Otro
+            <label for="pais">Pais: </label>
             <select id="pais" name="pais">
                 <option value=""></option>
                 <option value="argentina">Argentina</option>
@@ -45,8 +50,7 @@
                 <option value="brasil">Brasil</option>
                 <option value="uruguay">Uruguay</option>
             </select>
-            <label for="comentario">Comentarios: </label>
-            <textarea name="comentario" id="comentarioInput" placeholder="Déjenos su comentario..."></textarea>
+
             <p id="nombreError"></p>
             <p>(*) Campos obligatorios</p>
             <button class="enviar" type="submit">Enviar</button>
